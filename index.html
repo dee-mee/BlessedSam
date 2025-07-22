@@ -7,6 +7,116 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Prevent content from being hidden behind fixed navbar on mobile */
+        body {
+            padding-top: 56px; /* Height of the navbar */
+        }
+        
+        @media (min-width: 992px) {
+            body {
+                padding-top: 0; /* Reset padding for desktop */
+            }
+        }
+        /* Dark Theme Styles */
+        [data-theme="dark"] {
+            --bs-body-bg: #1a1a2e;
+            --bs-body-color: #e6e6e6;
+            --bs-light: #16213e;
+            --bs-dark: #f8f9fa;
+            --bs-primary: #4cc9f0;
+            --bs-secondary: #7209b7;
+        }
+
+        [data-theme="dark"] .navbar,
+        [data-theme="dark"] .footer {
+            background-color: #0f3460 !important;
+        }
+
+        [data-theme="dark"] .service-card,
+        [data-theme="dark"] .team-card,
+        [data-theme="dark"] .testimonial-card,
+        [data-theme="dark"] .contact-info {
+            background-color: #16213e !important;
+            border-color: #1f4068 !important;
+        }
+
+        [data-theme="dark"] .section-padding:not(.bg-light) {
+            background-color: #1a1a2e;
+        }
+
+        [data-theme="dark"] .bg-light:not(.service-card):not(.team-card):not(.testimonial-card) {
+            background-color: #16213e !important;
+        }
+
+        [data-theme="dark"] .text-muted {
+            color: #a8b2d1 !important;
+        }
+        
+        [data-theme="dark"] h1,
+        [data-theme="dark"] h2,
+        [data-theme="dark"] h3,
+        [data-theme="dark"] h4,
+        [data-theme="dark"] h5,
+        [data-theme="dark"] h6,
+        [data-theme="dark"] .section-title h2,
+        [data-theme="dark"] .section-title .lead {
+            color: #ffffff !important;
+        }
+        
+        [data-theme="dark"] .card,
+        [data-theme="dark"] .service-card,
+        [data-theme="dark"] .team-card,
+        [data-theme="dark"] .testimonial-card {
+            color: #e6e6e6;
+        }
+        
+        [data-theme="dark"] a:not(.btn) {
+            color: #4cc9f0;
+        }
+        
+        [data-theme="dark"] a:not(.btn):hover {
+            color: #8bd5f0;
+        }
+        
+        [data-theme="dark"] .btn-outline-primary {
+            color: #4cc9f0;
+            border-color: #4cc9f0;
+        }
+        
+        [data-theme="dark"] .btn-outline-primary:hover {
+            background-color: #4cc9f0;
+            color: #fff;
+        }
+
+        [data-theme="dark"] .btn-outline-secondary {
+            color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+
+        [data-theme="dark"] .btn-outline-secondary:hover {
+            background-color: var(--bs-primary);
+            color: #fff;
+        }
+
+        /* Theme Toggle Button */
+        #themeToggle .fa-sun {
+            display: none;
+        }
+
+        #themeToggle .fa-moon {
+            display: inline-block !important;
+        }
+
+        [data-theme="dark"] #themeToggle .fa-sun {
+            display: inline-block !important;
+            color: var(--bs-warning);
+        }
+
+        [data-theme="dark"] #themeToggle .fa-moon {
+            display: none !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -37,6 +147,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-secondary" aria-label="Toggle theme">
+                            <i class="fas fa-moon d-none"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -948,6 +1064,60 @@
                 e.preventDefault();
                 loadBlogPost(index + 1);
             });
+        });
+
+        // Theme Switching Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+
+        // Apply the saved theme, or the preferred color scheme
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', function() {
+            let theme = 'light';
+            if (!document.documentElement.hasAttribute('data-theme')) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                theme = 'dark';
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                theme = 'light';
+            }
+            localStorage.setItem('theme', theme);
+        });
+
+        // Update button icon based on current theme
+        function updateThemeIcon() {
+            const sunIcon = themeToggle.querySelector('.fa-sun');
+            const moonIcon = themeToggle.querySelector('.fa-moon');
+            
+            if (document.documentElement.hasAttribute('data-theme')) {
+                sunIcon.classList.remove('d-none');
+                moonIcon.classList.add('d-none');
+            } else {
+                sunIcon.classList.add('d-none');
+                moonIcon.classList.remove('d-none');
+            }
+        }
+
+        // Initial icon update
+        updateThemeIcon();
+
+        // Watch for system theme changes
+        prefersDarkScheme.addListener((e) => {
+            if (!localStorage.getItem('theme')) {
+                if (e.matches) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                }
+                updateThemeIcon();
+            }
         });
     </script>
 </body>
