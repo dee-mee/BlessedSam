@@ -88,6 +88,45 @@
             background-color: #4cc9f0;
             color: #fff;
         }
+        
+        /* Card Hover Effects */
+        .service-card,
+        .team-card,
+        .testimonial-card,
+        .card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card:hover,
+        .team-card:hover,
+        .testimonial-card:hover,
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 10px 20px rgba(0, 0, 0, 0.1),
+                0 0 15px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(76, 201, 240, 0.3);
+            border-color: rgba(76, 201, 240, 0.3) !important;
+        }
+        
+        [data-theme="dark"] .service-card,
+        [data-theme="dark"] .team-card,
+        [data-theme="dark"] .testimonial-card,
+        [data-theme="dark"] .card {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        [data-theme="dark"] .service-card:hover,
+        [data-theme="dark"] .team-card:hover,
+        [data-theme="dark"] .testimonial-card:hover,
+        [data-theme="dark"] .card:hover {
+            box-shadow: 
+                0 10px 20px rgba(0, 0, 0, 0.3),
+                0 0 15px rgba(255, 255, 255, 0.2),
+                0 0 30px rgba(76, 201, 240, 0.4) !important;
+            border-color: rgba(76, 201, 240, 0.4) !important;
+        }
 
         [data-theme="dark"] .btn-outline-secondary {
             color: var(--bs-primary);
