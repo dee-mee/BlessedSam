@@ -75,8 +75,15 @@ function initBackToTop() {
     const backToTopButton = document.getElementById('backToTop');
     if (!backToTopButton) return;
     
+    let ticking = false;
     function toggleBackToTop() {
-        backToTopButton.style.display = window.pageYOffset > 300 ? 'flex' : 'none';
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                backToTopButton.style.display = window.pageYOffset > 300 ? 'flex' : 'none';
+                ticking = false;
+            });
+            ticking = true;
+        }
     }
     
     window.addEventListener('scroll', toggleBackToTop, { passive: true });
@@ -181,16 +188,6 @@ function initThemeSwitcher() {
     updateThemeIcon();
 }
 
-// Smooth scroll function
-function smoothScroll(targetId) {
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-        window.scrollTo({
-            top: targetElement.offsetTop - 80, // Adjust for fixed header
-            behavior: 'smooth'
-        });
-    }
-}
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
