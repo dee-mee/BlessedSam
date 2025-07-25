@@ -1,1173 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLESSEDSAM ELECTRICAL INSTALLATIONS - Professional Electrical Services</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <style>
-        /* Prevent content from being hidden behind fixed navbar on mobile */
-        body {
-            padding-top: 56px; /* Height of the navbar */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- SEO Meta Tags -->
+  <title>BlessedSam Electrical Installations | Professional Electrical Services in Kenya</title>
+  <meta name="description" content="Professional electrical services in Kenya. Residential, commercial, and emergency electrical repairs. Licensed electricians serving Nairobi, Thika, and surrounding areas. Get free quotes today!" />
+  <meta name="keywords" content="electrical services Kenya, electrician Nairobi, electrical installation, electrical repairs, commercial electrical, residential electrical, emergency electrical, solar installation, panel upgrades, Thika electrician" />
+  <meta name="author" content="BlessedSam Electrical Installations" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://blessedsam-electrical.com/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://blessedsam-electrical.com/" />
+  <meta property="og:title" content="BlessedSam Electrical Installations | Professional Electrical Services in Kenya" />
+  <meta property="og:description" content="Professional electrical services in Kenya. Residential, commercial, and emergency electrical repairs. Licensed electricians serving Nairobi, Thika, and surrounding areas." />
+  <meta property="og:image" content="https://blessedsam-electrical.com/images/og-image.jpg" />
+  <meta property="og:locale" content="en_KE" />
+  <meta property="og:site_name" content="BlessedSam Electrical Installations" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://blessedsam-electrical.com/" />
+  <meta property="twitter:title" content="BlessedSam Electrical Installations | Professional Electrical Services in Kenya" />
+  <meta property="twitter:description" content="Professional electrical services in Kenya. Residential, commercial, and emergency electrical repairs. Licensed electricians serving Nairobi, Thika, and surrounding areas." />
+  <meta property="twitter:image" content="https://blessedsam-electrical.com/images/og-image.jpg" />
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2c5aa0">
+  <meta name="msapplication-TileColor" content="#2c5aa0">
+  <meta name="theme-color" content="#2c5aa0">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Stylesheets -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://blessedsam-electrical.com/#organization",
+    "name": "BlessedSam Electrical Installations",
+    "legalName": "BlessedSam Electrical Installations",
+    "alternateName": ["BlessedSam Electrical", "Blessed Sam Electrical"],
+    "description": "Professional electrical services in Kenya specializing in residential, commercial, and emergency electrical installations. Licensed electricians serving Nairobi, Thika, and surrounding areas with 24/7 emergency service.",
+    "url": "https://blessedsam-electrical.com",
+    "logo": "https://blessedsam-electrical.com/images/logo.png",
+    "image": [
+      "https://blessedsam-electrical.com/images/electric.webp",
+      "https://blessedsam-electrical.com/images/electrician.webp",
+      "https://blessedsam-electrical.com/images/img1.webp",
+      "https://blessedsam-electrical.com/images/img2.webp"
+    ],
+    "telephone": "+254700123456",
+    "email": "blessedsam5320@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "P.O. Box 965-01000",
+      "addressLocality": "Thika",
+      "addressRegion": "Central Kenya",
+      "postalCode": "01000",
+      "addressCountry": "KE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -1.0332,
+      "longitude": 37.0693
+    },
+    "areaServed": [
+      {"@type": "Place", "name": "Nairobi, Kenya"},
+      {"@type": "Place", "name": "Thika, Kenya"},
+      {"@type": "Place", "name": "Central Kenya"},
+      {"@type": "Place", "name": "Murang'a County, Kenya"}
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": -1.0332,
+        "longitude": 37.0693
+      },
+      "geoRadius": "100000"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "priceRange": "$$",
+    "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer", "Mobile Money"],
+    "currenciesAccepted": "KES",
+    "foundingDate": "2008",
+    "founder": {
+      "@type": "Person",
+      "name": "John Excellence"
+    },
+    "numberOfEmployees": "10-15",
+    "slogan": "Professional Electrical Solutions Since 2008",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Electrical Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Residential Electrical Services",
+            "description": "Complete home electrical services including wiring, panel upgrades, and smart home integration",
+            "serviceType": "Residential Electrical"
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Commercial Electrical Services",
+            "description": "Efficient electrical installations and maintenance for businesses and office buildings",
+            "serviceType": "Commercial Electrical"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Emergency Electrical Repairs",
+            "description": "24/7 emergency electrical repair services to fix critical problems",
+            "serviceType": "Emergency Electrical"
+          }
         }
-        
-        @media (min-width: 992px) {
-            body {
-                padding-top: 0; /* Reset padding for desktop */
-            }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "150",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Jennifer Smith"
+        },
+        "reviewBody": "BLESSEDSAM ELECTRICAL did an amazing job rewiring our entire home. Professional, efficient, and very reasonably priced!",
+        "datePublished": "2025-01-20"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating", 
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Michael Kimani"
+        },
+        "reviewBody": "Quick response time for our emergency power outage. They had us back up and running within 2 hours. Highly recommend!",
+        "datePublished": "2025-01-15"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5", 
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Sarah Wanjiku"
+        },
+        "reviewBody": "Professional solar installation service. Clean work, great communication, and excellent follow-up support.",
+        "datePublished": "2025-01-10"
+      }
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+254700123456",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Swahili"],
+        "areaServed": "KE",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "opens": "00:00",
+          "closes": "23:59",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
         }
-        /* Dark Theme Styles */
-        [data-theme="dark"] {
-            --bs-body-bg: #1a1a2e;
-            --bs-body-color: #e6e6e6;
-            --bs-light: #16213e;
-            --bs-dark: #f8f9fa;
-            --bs-primary: #4cc9f0;
-            --bs-secondary: #7209b7;
-        }
-
-        [data-theme="dark"] .navbar,
-        [data-theme="dark"] .footer {
-            background-color: #0f3460 !important;
-        }
-
-        [data-theme="dark"] .service-card,
-        [data-theme="dark"] .team-card,
-        [data-theme="dark"] .testimonial-card,
-        [data-theme="dark"] .contact-info {
-            background-color: #16213e !important;
-            border-color: #1f4068 !important;
-        }
-
-        [data-theme="dark"] .section-padding:not(.bg-light) {
-            background-color: #1a1a2e;
-        }
-
-        [data-theme="dark"] .bg-light:not(.service-card):not(.team-card):not(.testimonial-card) {
-            background-color: #16213e !important;
-        }
-        
-        /* Make hamburger menu white in dark mode */
-        [data-theme="dark"] .navbar-toggler {
-            border-color: rgba(255, 255, 255, 0.5);
-        }
-        
-        [data-theme="dark"] .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-        }
-
-        [data-theme="dark"] .text-muted {
-            color: #a8b2d1 !important;
-        }
-        
-        [data-theme="dark"] h1,
-        [data-theme="dark"] h2,
-        [data-theme="dark"] h3,
-        [data-theme="dark"] h4,
-        [data-theme="dark"] h5,
-        [data-theme="dark"] h6,
-        [data-theme="dark"] .section-title h2,
-        [data-theme="dark"] .section-title .lead {
-            color: #ffffff !important;
-        }
-        
-        [data-theme="dark"] .card,
-        [data-theme="dark"] .service-card,
-        [data-theme="dark"] .team-card,
-        [data-theme="dark"] .testimonial-card {
-            color: #e6e6e6;
-        }
-        
-        [data-theme="dark"] a:not(.btn) {
-            color: #4cc9f0;
-        }
-        
-        [data-theme="dark"] a:not(.btn):hover {
-            color: #8bd5f0;
-        }
-        
-        [data-theme="dark"] .btn-outline-primary {
-            color: #4cc9f0;
-            border-color: #4cc9f0;
-        }
-        
-        [data-theme="dark"] .btn-outline-primary:hover {
-            background-color: #4cc9f0;
-            color: #fff;
-        }
-        
-        /* Card Hover Effects */
-        .service-card,
-        .team-card,
-        .testimonial-card,
-        .card {
-            transition: all 0.3s ease-in-out;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-card:hover,
-        .team-card:hover,
-        .testimonial-card:hover,
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 
-                0 10px 20px rgba(0, 0, 0, 0.1),
-                0 0 15px rgba(255, 255, 255, 0.6),
-                0 0 30px rgba(76, 201, 240, 0.3);
-            border-color: rgba(76, 201, 240, 0.3) !important;
-        }
-        
-        [data-theme="dark"] .service-card,
-        [data-theme="dark"] .team-card,
-        [data-theme="dark"] .testimonial-card,
-        [data-theme="dark"] .card {
-            border-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        [data-theme="dark"] .service-card:hover,
-        [data-theme="dark"] .team-card:hover,
-        [data-theme="dark"] .testimonial-card:hover,
-        [data-theme="dark"] .card:hover {
-            box-shadow: 
-                0 10px 20px rgba(0, 0, 0, 0.3),
-                0 0 15px rgba(255, 255, 255, 0.2),
-                0 0 30px rgba(76, 201, 240, 0.4) !important;
-            border-color: rgba(76, 201, 240, 0.4) !important;
-        }
-
-        [data-theme="dark"] .btn-outline-secondary {
-            color: var(--bs-primary);
-            border-color: var(--bs-primary);
-        }
-
-        [data-theme="dark"] .btn-outline-secondary:hover {
-            background-color: var(--bs-primary);
-            color: #fff;
-        }
-
-        /* Theme Toggle Button */
-        #themeToggle .fa-sun {
-            display: none;
-        }
-
-        #themeToggle .fa-moon {
-            display: inline-block !important;
-        }
-
-        [data-theme="dark"] #themeToggle .fa-sun {
-            display: inline-block !important;
-            color: var(--bs-warning);
-        }
-
-        [data-theme="dark"] #themeToggle .fa-moon {
-            display: none !important;
-        }
-    </style>
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "blessedsam5320@gmail.com",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Swahili"]
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/blessedsam-electrical",
+      "https://www.linkedin.com/company/blessedsam-electrical",
+      "https://twitter.com/blessedsam_elec"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Free Electrical Quote",
+        "description": "Get a free, no-obligation quote for your electrical project",
+        "price": "0",
+        "priceCurrency": "KES"
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* Prevent content from being hidden behind fixed navbar */
+    body {
+      padding-top: 76px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <i class="fas fa-bolt me-2"></i>BLESSEDSAM ELECTRICAL
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-bolt me-2"></i>BLESSEDSAM ELECTRICAL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-outline-secondary" aria-label="Toggle theme">
+              <i class="fas fa-moon d-none"></i>
+              <i class="fas fa-sun"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item ms-lg-3">
-                        <button id="themeToggle" class="btn btn-sm btn-outline-secondary" aria-label="Toggle theme">
-                            <i class="fas fa-moon d-none"></i>
-                            <i class="fas fa-sun"></i>
-                        </button>
-                    </li>
-                </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <h1 class="display-4 fw-bold mb-4">Professional Electrical Services in Kenya</h1>
+            <p class="lead mb-4">Licensed electricians providing residential, commercial, and emergency electrical services across Nairobi, Thika, and Central Kenya. Available 24/7 for all your electrical needs.</p>
+            <div class="hero-buttons">
+              <a href="contact.html" class="btn btn-primary-custom me-3">Get Free Quote</a>
+              <a href="services.html" class="btn btn-outline-light">Our Services</a>
             </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Home Section -->
-    <div id="home" class="page-section active">
-        <section class="hero-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="hero-content">
-                            <h1 class="display-4 fw-bold mb-4">Powering Your World with Excellence</h1>
-                            <p class="lead mb-4">Professional electrical services you can trust. From residential wiring to commercial installations, we deliver quality solutions that keep your power flowing safely.</p>
-                            <div class="hero-buttons">
-                                <a href="#contact" class="btn btn-primary-custom me-3">Get Free Quote</a>
-                                <a href="#services" class="btn btn-outline-light">Our Services</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <div class="hero-image">
-                            <img src="images/electric.png" alt="Hero Image" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Stats -->
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-3 mb-4">
-                        <h3 class="fw-bold text-primary">500+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <h3 class="fw-bold text-primary">15+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <h3 class="fw-bold text-primary">100%</h3>
-                        <p>Licensed & Insured</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <h3 class="fw-bold text-primary">24/7</h3>
-                        <p>Emergency Service</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Us on Homepage -->
-        <section class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="section-title text-start">
-                            <h2>About BLESSEDSAM ELECTRICAL</h2>
-                            <p class="lead">Your trusted electrical experts since 2008</p>
-                        </div>
-                        <p>With over 15 years of experience, BLESSEDSAM ELECTRICAL INSTALLATIONS has been providing top-quality electrical services to homes and businesses in Thika and beyond. Our team of certified electricians is committed to excellence in every project we undertake.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-primary me-2 mt-1"></i>
-                                    <div>
-                                        <h6 class="mb-1">Licensed & Insured</h6>
-                                        <p class="small text-muted mb-0">Fully certified and insured for your peace of mind</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-primary me-2 mt-1"></i>
-                                    <div>
-                                        <h6 class="mb-1">24/7 Emergency</h6>
-                                        <p class="small text-muted mb-0">Round-the-clock service when you need it most</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#about" class="btn btn-outline-primary mt-2">Learn More About Us</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="position-relative">
-                            <div class="about-img-1 rounded-4 overflow-hidden mb-3">
-                                <div class="gradient-bg-primary p-5 text-white text-center">
-                                    <i class="fas fa-tools icon-large mb-3"></i>
-                                    <h4 class="h5">Professional & Reliable</h4>
-                                    <p class="mb-0">Your satisfaction is our top priority</p>
-                                </div>
-                            </div>
-                            <div class="about-img-2 rounded-4 overflow-hidden">
-                                <div class="gradient-bg-secondary p-4 text-white text-center">
-                                    <div class="d-flex justify-content-around">
-                                        <div class="text-center px-2">
-                                            <h3 class="mb-0 fw-bold">15+</h3>
-                                            <small>Years Experience</small>
-                                        </div>
-                                        <div class="text-center px-2">
-                                            <h3 class="mb-0 fw-bold">500+</h3>
-                                            <small>Projects Completed</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials on Homepage -->
-        <section class="py-5">
-            <div class="container">
-                <div class="section-title text-center mb-5">
-                    <h2>What Our Customers Say</h2>
-                    <p class="lead">Don't just take our word for it</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <div class="testimonial-card h-100">
-                            <p class="mb-4">"Excellence Electricals did an amazing job rewiring our entire home. The team was professional, clean, and completed the work on time and within budget. Highly recommended!"</p>
-                            <div class="d-flex align-items-center mt-auto">
-                                <div class="testimonial-avatar me-3">
-                                    <div class="testimonial-avatar-container bg-primary rounded-circle d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-user text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0">Jennifer Smith</h6>
-                                    <small class="text-muted">Homeowner</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="testimonial-card h-100">
-                            <p class="mb-4">"We needed emergency electrical repair for our office building. They responded within an hour and had us back up and running the same day. Excellent service!"</p>
-                            <div class="d-flex align-items-center mt-auto">
-                                <div class="testimonial-avatar me-3">
-                                    <div class="testimonial-avatar-container bg-primary rounded-circle d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-user text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0">Michael Brown</h6>
-                                    <small class="text-muted">Business Owner</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="testimonial-card h-100">
-                            <p class="mb-4">"The solar installation was seamless and the team explained everything clearly. Our energy bills have dropped significantly. Professional work from start to finish."</p>
-                            <div class="d-flex align-items-center mt-auto">
-                                <div class="testimonial-avatar me-3">
-                                    <div class="testimonial-avatar-container bg-primary rounded-circle d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-user text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h6 class="mb-0">Lisa Davis</h6>
-                                    <small class="text-muted">Homeowner</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services on Homepage -->
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="section-title text-center mb-5">
-                    <h2>Our Electrical Services</h2>
-                    <p class="lead">Professional solutions for all your electrical needs</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card h-100">
-                            <div class="service-icon">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <h4>Residential Electrical</h4>
-                            <p>Complete home wiring, lighting installations, panel upgrades, and electrical repairs for your home.</p>
-                            <a href="#services" class="btn btn-link p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card h-100">
-                            <div class="service-icon">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <h4>Commercial Electrical</h4>
-                            <p>Professional electrical services for businesses, offices, and commercial properties of all sizes.</p>
-                            <a href="#services" class="btn btn-link p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="service-card h-100">
-                            <div class="service-icon">
-                                <i class="fas fa-tools"></i>
-                            </div>
-                            <h4>Emergency Repairs</h4>
-                            <p>24/7 emergency electrical services to handle any urgent electrical issues you may encounter.</p>
-                            <a href="#services" class="btn btn-link p-0">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <a href="#services" class="btn btn-primary-custom">View All Services</a>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- About Section -->
-    <div id="about" class="page-section">
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <h2>About BLESSEDSAM ELECTRICAL INSTALLATIONS</h2>
-                    <p class="lead">Your trusted partner in electrical solutions since 2008</p>
-                </div>
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <h3 class="mb-4">Our Story</h3>
-                            <p>Founded in 2008 by master electrician John Excellence, Excellence Electricals has grown from a small local business to one of the region's most trusted electrical service providers. Our commitment to safety, quality, and customer satisfaction has earned us thousands of satisfied customers.</p>
-                            <p>We specialize in both residential and commercial electrical work, bringing decades of combined experience to every project. Our team of certified electricians stays current with the latest electrical codes and technologies.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <div class="gradient-bg-primary rounded-4 p-5 text-white">
-                            <i class="fas fa-tools icon-extra-large mb-4"></i>
-                            <h4>Professional Excellence</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Vision & Mission -->
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="service-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h4>Our Vision</h4>
-                            <p>To be the leading electrical service provider, known for innovation, reliability, and exceptional customer service in every community we serve.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="service-icon">
-                                <i class="fas fa-bullseye"></i>
-                            </div>
-                            <h4>Our Mission</h4>
-                            <p>To provide safe, efficient, and cost-effective electrical solutions while building lasting relationships with our customers through trust and excellence.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="service-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <h4>Our Values</h4>
-                            <p>Safety first, quality craftsmanship, honest pricing, timely service, and treating every customer's property with the respect it deserves.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Section -->
-                <div class="section-title mt-5">
-                    <h3>Meet Our Team</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <div class="team-card text-center">
-                            <div class="team-img">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="p-4">
-                                <h4>John Excellence</h4>
-                                <p class="text-primary">Master Electrician & Founder</p>
-                                <p>15+ years of experience in electrical contracting with specialization in commercial and industrial installations.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="team-card text-center">
-                            <div class="team-img">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="p-4">
-                                <h4>Sarah Johnson</h4>
-                                <p class="text-primary">Lead Residential Specialist</p>
-                                <p>Expert in home electrical systems, smart home technology, and energy-efficient solutions for modern homes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="team-card text-center">
-                            <div class="team-img">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="p-4">
-                                <h4>Mike Rodriguez</h4>
-                                <p class="text-primary">Commercial Projects Manager</p>
-                                <p>Specializes in large-scale commercial electrical projects and industrial automation systems.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Services Section -->
-    <div id="services" class="page-section">
-        <section class="section-padding bg-light">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Our Services</h2>
-                    <p class="lead">Comprehensive electrical solutions for all your needs</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <h4>Residential Electrical</h4>
-                            <p>Complete home electrical services including wiring, panel upgrades, outlet installation, and electrical repairs for homes of all sizes.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check text-success me-2"></i>Whole house rewiring</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Panel upgrades</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Smart home integration</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <h4>Commercial Electrical</h4>
-                            <p>Professional electrical services for businesses, offices, and commercial properties with focus on efficiency and compliance.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check text-success me-2"></i>Office lighting systems</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Power distribution</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Emergency lighting</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-exclamation-triangle"></i>
-                            </div>
-                            <h4>Emergency Repairs</h4>
-                            <p>24/7 emergency electrical repair services for urgent electrical issues that can't wait until business hours.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check text-success me-2"></i>Power outage diagnosis</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Electrical fire prevention</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Same-day service</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <h4>Lighting Installation</h4>
-                            <p>Custom lighting solutions including LED upgrades, landscape lighting, and decorative fixtures for any space.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check text-success me-2"></i>LED conversions</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Landscape lighting</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Decorative fixtures</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h4>Safety Inspections</h4>
-                            <p>Comprehensive electrical safety inspections to ensure your property meets all current electrical codes and safety standards.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check text-success me-2"></i>Code compliance checks</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Safety assessments</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Detailed reports</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="service-card">
-                            <div class="service-icon">
-                                <i class="fas fa-solar-panel"></i>
-                            </div>
-                            <h4>Solar Installation</h4>
-                            <p>Professional solar panel installation and electrical integration for sustainable energy solutions and reduced utility costs.</p>
-                            <ul class="list-unstyled mt-3">
-                                <li><i class="fas fa-check text-success me-2"></i>Solar panel installation</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Grid-tie systems</li>
-                                <li><i class="fas fa-check text-success me-2"></i>Battery backup</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Portfolio Section -->
-    <div id="portfolio" class="page-section">
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Our Portfolio</h2>
-                    <p class="lead">Showcasing our quality workmanship</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card">
-                            <div class="project-img">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <h5>Modern Home Rewiring</h5>
-                                <p>Complete electrical renovation of a 3,500 sq ft modern home including smart home integration and LED lighting throughout.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card">
-                            <div class="project-img">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <h5>Office Complex Lighting</h5>
-                                <p>Energy-efficient LED lighting installation for a 50,000 sq ft office complex with automated controls and emergency backup systems.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card">
-                            <div class="project-img">
-                                <i class="fas fa-solar-panel"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <h5>Solar Installation Project</h5>
-                                <p>15kW solar panel system installation with battery backup for a residential property, reducing energy costs by 80%.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card">
-                            <div class="project-img">
-                                <i class="fas fa-industry"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <h5>Industrial Upgrade</h5>
-                                <p>Major electrical system upgrade for manufacturing facility including 480V three-phase power distribution and control panels.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card">
-                            <div class="project-img">
-                                <i class="fas fa-store"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <h5>Retail Store Electrical</h5>
-                                <p>Complete electrical installation for new retail space including track lighting, POS systems, and security system wiring.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="project-card">
-                            <div class="project-img">
-                                <i class="fas fa-hospital"></i>
-                            </div>
-                            <div class="project-overlay">
-                                <h5>Medical Facility Wiring</h5>
-                                <p>Specialized electrical work for medical clinic including isolated ground systems, emergency power, and medical equipment circuits.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-    <!-- Blog Section -->
-    <div id="blog" class="page-section">
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Latest News & Tips</h2>
-                    <p class="lead">Stay informed about electrical safety and industry updates</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="card-icon-container gradient-bg-primary">
-                                <i class="fas fa-newspaper icon-large"></i>
-                            </div>
-                            <h4>5 Signs You Need an Electrical Panel Upgrade</h4>
-                            <p class="text-muted mb-3">July 15, 2025</p>
-                            <p>Learn the warning signs that indicate your electrical panel needs upgrading for safety and efficiency. Don't ignore these critical indicators.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="card-icon-container gradient-bg-secondary">
-                                <i class="fas fa-home icon-large"></i>
-                            </div>
-                            <h4>Smart Home Electrical Planning Guide</h4>
-                            <p class="text-muted mb-3">July 10, 2025</p>
-                            <p>Everything you need to know about preparing your home's electrical system for smart home technology integration.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="card-icon-container gradient-bg-success">
-                                <i class="fas fa-leaf icon-large"></i>
-                            </div>
-                            <h4>Energy-Efficient Lighting Solutions</h4>
-                            <p class="text-muted mb-3">July 5, 2025</p>
-                            <p>Discover how LED lighting and smart controls can significantly reduce your energy costs while improving your home's ambiance.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="card-icon-container gradient-bg-purple">
-                                <i class="fas fa-shield-alt icon-large"></i>
-                            </div>
-                            <h4>Electrical Safety Tips for Homeowners</h4>
-                            <p class="text-muted mb-3">June 28, 2025</p>
-                            <p>Essential electrical safety practices every homeowner should know to protect their family and property from electrical hazards.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="card-icon-container gradient-bg-danger">
-                                <i class="fas fa-exclamation-triangle icon-large"></i>
-                            </div>
-                            <h4>When to Call an Emergency Electrician</h4>
-                            <p class="text-muted mb-3">June 20, 2025</p>
-                            <p>Learn to identify electrical emergencies that require immediate professional attention and how to stay safe until help arrives.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="service-card h-100">
-                            <div class="card-icon-container gradient-bg-warning">
-                                <i class="fas fa-solar-panel icon-large"></i>
-                            </div>
-                            <h4>Solar Power: Is It Right for Your Home?</h4>
-                            <p class="text-muted mb-3">June 15, 2025</p>
-                            <p>A comprehensive guide to determining if solar power is a good investment for your property and understanding the installation process.</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="page-section">
-        <section class="section-padding bg-light">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Get In Touch</h2>
-                    <p class="lead">Ready to start your electrical project? Contact us today!</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mb-4">
-                        <div class="contact-form">
-                            <h4 class="mb-4">Send Us a Message</h4>
-                            <form id="contactForm">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="firstName" class="form-label">First Name *</label>
-                                        <input type="text" class="form-control" id="firstName" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="lastName" class="form-label">Last Name *</label>
-                                        <input type="text" class="form-control" id="lastName" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="email" class="form-label">Email *</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="phone" class="form-label">Phone</label>
-                                        <input type="tel" class="form-control" id="phone">
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="service" class="form-label">Service Needed</label>
-                                    <select class="form-control" id="service">
-                                        <option value="">Select a service...</option>
-                                        <option value="residential">Residential Electrical</option>
-                                        <option value="commercial">Commercial Electrical</option>
-                                        <option value="emergency">Emergency Repair</option>
-                                        <option value="lighting">Lighting Installation</option>
-                                        <option value="inspection">Safety Inspection</option>
-                                        <option value="solar">Solar Installation</option>
-                                    </select>
-                                </div>
-                                <div class="mb-4">
-                                    <label for="message" class="form-label">Message *</label>
-                                    <textarea class="form-control" id="message" rows="5" required placeholder="Please describe your electrical needs..."></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary-custom">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="contact-info">
-                            <h4 class="mb-4 text-white">Contact Information</h4>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h6>Address</h6>
-                                    <p>P.O. Box 965-01000<br>THIKA, Kenya</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <div>
-                                    <h6>Phone</h6>
-                                    <p>+254 700 123 456</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <h6>Email</h6>
-                                    <p>blessedsam5320@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-clock"></i>
-                                <div>
-                                    <h6>Business Hours</h6>
-                                    <p>Mon - Fri: 7:00 AM - 6:00 PM<br>Sat: 8:00 AM - 4:00 PM<br>Sun: Emergency Only</p>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <h6 class="text-white mb-3">Follow Us</h6>
-                                <div class="social-links">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- 404 Error Page -->
-    <div id="error404" class="page-section">
-        <section class="error-404">
-            <div class="container">
-                <h1>404</h1>
-                <h2>Page Not Found</h2>
-                <p class="lead">Sorry, the page you are looking for doesn't exist.</p>
-                <a href="#home" class="btn btn-primary-custom">Go Home</a>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5><i class="fas fa-bolt me-2"></i>BLESSEDSAM ELECTRICAL INSTALLATIONS</h5>
-                    <p>Your trusted partner for all electrical needs. Licensed, insured, and committed to excellence in every project.</p>
-                    <div class="social-links mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h6>Quick Links</h6>
-                    <div class="footer-links">
-                        <a href="#home" class="d-block mb-2">Home</a>
-                        <a href="#about" class="d-block mb-2">About</a>
-                        <a href="#services" class="d-block mb-2">Services</a>
-                        <a href="#portfolio" class="d-block mb-2">Portfolio</a>
-                        <a href="#contact" class="d-block mb-2">Contact</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <h6>Services</h6>
-                    <div class="footer-links">
-                        <a href="#services" class="d-block mb-2">Residential Electrical</a>
-                        <a href="#services" class="d-block mb-2">Commercial Electrical</a>
-                        <a href="#services" class="d-block mb-2">Emergency Repairs</a>
-                        <a href="#services" class="d-block mb-2">Lighting Installation</a>
-                        <a href="#services" class="d-block mb-2">Solar Installation</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h6>Contact Info</h6>
-                    <p><i class="fas fa-map-marker-alt me-2"></i>P.O. Box 965-01000, THIKA</p>
-                    <p><i class="fas fa-phone me-2"></i>+254 700 123 456</p>
-                    <p><i class="fas fa-envelope me-2"></i>blessedsam5320@gmail.com</p>
-                    <p><i class="fas fa-clock me-2"></i>24/7 Emergency Service</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 BLESSEDSAM ELECTRICAL INSTALLATIONS. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <div class="footer-links">
-                        <a href="#" class="me-3">Privacy Policy</a>
-                        <a href="#" class="me-3">Terms of Service</a>
-                        <a href="#">Sitemap</a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-6 text-center">
+          <div class="hero-image">
+            <img src="images/electric.webp" alt="Professional electrician working on electrical installation in Kenya" class="img-fluid" />
+          </div>
         </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+      </div>
     </div>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // Single Page Application Navigation
-        function showSection(sectionId) {
-            // Hide all sections
-            document.querySelectorAll('.page-section').forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Show selected section
-            const targetSection = document.getElementById(sectionId);
-            if (targetSection) {
-                targetSection.classList.add('active');
-                window.scrollTo(0, 0);
-            }
-            
-            // Update active nav link
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-            });
-            document.querySelector(`a[href="#${sectionId}"]`)?.classList.add('active');
-        }
+  <!-- Services Preview Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Our Electrical Services</h2>
+        <p class="lead">Professional electrical solutions for all your needs</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-home"></i></div>
+            <h4>Residential Electrical</h4>
+            <p>Complete home electrical services including wiring, panel upgrades, and smart home integration.</p>
+            <ul class="list-unstyled mt-3">
+              <li><i class="fas fa-check text-success me-2"></i>Whole house rewiring</li>
+              <li><i class="fas fa-check text-success me-2"></i>Panel upgrades</li>
+              <li><i class="fas fa-check text-success me-2"></i>Smart home systems</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-building"></i></div>
+            <h4>Commercial Electrical</h4>
+            <p>Efficient electrical installations and maintenance for businesses and office buildings.</p>
+            <ul class="list-unstyled mt-3">
+              <li><i class="fas fa-check text-success me-2"></i>Office lighting systems</li>
+              <li><i class="fas fa-check text-success me-2"></i>Power distribution</li>
+              <li><i class="fas fa-check text-success me-2"></i>Emergency lighting</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="service-card h-100">
+            <div class="service-icon"><i class="fas fa-exclamation-triangle"></i></div>
+            <h4>Emergency Repairs</h4>
+            <p>24/7 emergency electrical repair services to fix critical problems when they arise.</p>
+            <ul class="list-unstyled mt-3">
+              <li><i class="fas fa-check text-success me-2"></i>Power outage diagnosis</li>
+              <li><i class="fas fa-check text-success me-2"></i>Fire hazard prevention</li>
+              <li><i class="fas fa-check text-success me-2"></i>Same-day service</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="services.html" class="btn btn-primary-custom btn-lg">
+          <i class="fas fa-tools me-2"></i>View All Services
+        </a>
+      </div>
+    </div>
+  </section>
 
-        // Handle navigation clicks
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                showSection(targetId);
-                
-                // Close mobile menu if open
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse.classList.contains('show')) {
-                    bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
-                }
-            });
-        });
+  <!-- Gallery Section -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Our Work Gallery</h2>
+        <p class="lead">Take a look at some of our recent electrical projects</p>
+      </div>
+      
+      <!-- Custom Image Slider -->
+      <div class="custom-slider">
+        <div class="slider-track">
+          <!-- Original slides -->
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img1.webp');">
 
-        // Contact Form Handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = {
-                firstName: document.getElementById('firstName').value,
-                lastName: document.getElementById('lastName').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                service: document.getElementById('service').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Simple validation
-            if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            // Simulate form submission
-            alert('Thank you for your message! We will contact you within 24 hours.');
-            this.reset();
-        });
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Residential Wiring Project</h3>
+                  <p class="lead">Modern home electrical installation in Nairobi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img2.webp');">
 
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTopButton.style.display = 'flex';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        });
-        
-        backToTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Commercial Office Setup</h3>
+                  <p class="lead">5-floor corporate office in Thika</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img3.webp');">
 
-        // Smooth scrolling for anchor links within sections
-        document.querySelectorAll('a[href^="#"]:not([href="#home"], [href="#about"], [href="#services"], [href="#portfolio"], [href="#testimonials"], [href="#blog"], [href="#contact"])').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Emergency Repair Service</h3>
+                  <p class="lead">Industrial warehouse power restoration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img4.webp');">
 
-        // Initialize navbar active state
-        document.querySelector('.nav-link[href="#home"]').classList.add('active');
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Solar Power Installation</h3>
+                  <p class="lead">Off-grid solar system in Murang'a</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Duplicated slides for seamless infinite scrolling -->
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img1.webp');">
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Residential Wiring Project</h3>
+                  <p class="lead">Modern home electrical installation in Nairobi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img2.webp');">
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Commercial Office Setup</h3>
+                  <p class="lead">5-floor corporate office in Thika</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img3.webp');">
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Emergency Repair Service</h3>
+                  <p class="lead">Industrial warehouse power restoration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="gallery-slide" style="background-image: url('images/img4.webp');">
+              <div class="gallery-overlay">
+                <div class="text-center text-white">
+                  <h3>Solar Power Installation</h3>
+                  <p class="lead">Off-grid solar system in Murang'a</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <a href="portfolio.html" class="btn btn-outline-primary btn-lg">
+          <i class="fas fa-images me-2"></i>View Full Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
 
-        // Add loading animation to service cards
-        document.addEventListener('DOMContentLoaded', function() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+  <!-- About Preview Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-preview">
+            <h2>Why Choose BLESSEDSAM ELECTRICAL?</h2>
+            <p class="lead mb-4">Your trusted partner in electrical solutions since 2008</p>
+            <p>We specialize in both residential and commercial electrical work, bringing decades of combined experience to every project. Our team of certified electricians stays current with the latest electrical codes and technologies.</p>
+            <div class="row mt-4">
+              <div class="col-sm-6 mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="icon-container me-3">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Licensed & Insured</h6>
+                    <small class="text-muted">Fully certified professionals</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="icon-container me-3">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">24/7 Emergency</h6>
+                    <small class="text-muted">Always available for you</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="gradient-bg-primary rounded-4 p-5 text-white">
+            <i class="fas fa-award icon-extra-large mb-4"></i>
+            <h4>15+ Years</h4>
+            <p class="mb-0">Of Professional Excellence</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="about.html" class="btn btn-secondary-custom btn-lg me-3">
+          <i class="fas fa-users me-2"></i>Learn About Us
+        </a>
+        <a href="blog.html" class="btn btn-outline-secondary btn-lg">
+          <i class="fas fa-newspaper me-2"></i>Read Our Blog
+        </a>
+      </div>
+    </div>
+  </section>
 
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
+  <!-- Testimonials -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <h2>What Our Customers Say</h2>
+        <p class="lead">Don't just take our word for it</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p>"BLESSEDSAM ELECTRICAL did an amazing job rewiring our entire home. Professional, efficient, and very reasonably priced!"</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div class="testimonial-avatar me-3">
+                <div class="testimonial-avatar-container bg-primary rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="fas fa-user text-white"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-0">Jennifer Smith</h6>
+                <small class="text-muted">Homeowner, Nairobi</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p>"Quick response time for our emergency power outage. They had us back up and running within 2 hours. Highly recommend!"</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div class="testimonial-avatar me-3">
+                <div class="testimonial-avatar-container bg-success rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="fas fa-user text-white"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-0">Michael Kimani</h6>
+                <small class="text-muted">Business Owner, Thika</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="testimonial-card h-100">
+            <div class="mb-3">
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+              <i class="fas fa-star text-warning"></i>
+            </div>
+            <p>"Professional solar installation service. Clean work, great communication, and excellent follow-up support."</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div class="testimonial-avatar me-3">
+                <div class="testimonial-avatar-container bg-warning rounded-circle d-flex justify-content-center align-items-center">
+                  <i class="fas fa-user text-white"></i>
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-0">Sarah Wanjiku</h6>
+                <small class="text-muted">Homeowner, Murang'a</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            // Observe service cards for animation
-            document.querySelectorAll('.service-card, .team-card, .project-card').forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
-            });
-        });
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About Footer Column -->
+        <div class="col-lg-4 mb-4">
+          <h5><i class="fas fa-bolt me-2"></i>BLESSEDSAM ELECTRICAL INSTALLATIONS</h5>
+          <p>Your trusted partner for all electrical needs...</p>
+        </div>
+        <!-- Quick Links Column -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h6>Quick Links</h6>
+          <div class="footer-links">
+            <a href="index.html" class="d-block mb-2">Home</a>
+            <a href="about.html" class="d-block mb-2">About</a>
+            <a href="services.html" class="d-block mb-2">Services</a>
+            <a href="portfolio.html" class="d-block mb-2">Portfolio</a>
+            <a href="contact.html" class="d-block mb-2">Contact</a>
+          </div>
+        </div>
+        <!-- Contact Info Column -->
+        <div class="col-lg-3 mb-4">
+          <h6>Contact Info</h6>
+          <p><i class="fas fa-map-marker-alt me-2"></i>P.O. Box 965-01000, THIKA</p>
+          <p><i class="fas fa-phone me-2"></i>+254 700 123 456</p>
+          <p><i class="fas fa-envelope me-2"></i>blessedsam5320@gmail.com</p>
+          <p><i class="fas fa-clock me-2"></i>24/7 Emergency Service</p>
+        </div>
+      </div>
+      <hr />
+      <div class="text-center">
+        <p>&copy; 2025 BLESSEDSAM ELECTRICAL. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-        // Add some interactive effects
-        document.querySelectorAll('.service-card, .team-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Handle 404 errors (simulate)
-        function handle404() {
-            showSection('error404');
-        }
-
-        // Simulate some dynamic content loading
-        function loadBlogPost(postId) {
-            // This would typically load content from a server
-            alert(`Loading blog post ${postId}...`);
-        }
-
-        // Add click handlers for blog "Read More" buttons
-        document.querySelectorAll('#blog .btn-outline-primary').forEach((btn, index) => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                loadBlogPost(index + 1);
-            });
-        });
-
-        // Theme Switching Functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
-
-        // Apply the saved theme, or the preferred color scheme
-        if (currentTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
-            document.documentElement.removeAttribute('data-theme');
-        }
-
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', function() {
-            let theme = 'light';
-            if (!document.documentElement.hasAttribute('data-theme')) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                theme = 'dark';
-            } else {
-                document.documentElement.removeAttribute('data-theme');
-                theme = 'light';
-            }
-            localStorage.setItem('theme', theme);
-        });
-
-        // Update button icon based on current theme
-        function updateThemeIcon() {
-            const sunIcon = themeToggle.querySelector('.fa-sun');
-            const moonIcon = themeToggle.querySelector('.fa-moon');
-            
-            if (document.documentElement.hasAttribute('data-theme')) {
-                sunIcon.classList.remove('d-none');
-                moonIcon.classList.add('d-none');
-            } else {
-                sunIcon.classList.add('d-none');
-                moonIcon.classList.remove('d-none');
-            }
-        }
-
-        // Initial icon update
-        updateThemeIcon();
-
-        // Watch for system theme changes
-        prefersDarkScheme.addListener((e) => {
-            if (!localStorage.getItem('theme')) {
-                if (e.matches) {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                } else {
-                    document.documentElement.removeAttribute('data-theme');
-                }
-                updateThemeIcon();
-            }
-        });
-    </script>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
-                

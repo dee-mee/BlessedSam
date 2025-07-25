@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://blessedsam-electrical.com/sitemap.xml
+
+# Block access to admin areas (if any exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all image types
+Allow: /images/
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.png
+Allow: *.webp
+Allow: *.svg
+
+# Allow CSS and JS files
+Allow: *.css
+Allow: *.js
+
+# Crawl delay for polite crawling
+Crawl-delay: 1

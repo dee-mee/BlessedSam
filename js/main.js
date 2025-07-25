@@ -128,7 +128,7 @@ function initThemeSwitcher() {
     if (!themeToggle) return;
     
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+    const currentTheme = localStorage.getItem('theme') || 'light'; // Default to light theme
 
     // Apply the saved theme, or the preferred color scheme
     if (currentTheme === 'dark') {
