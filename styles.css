@@ -74,6 +74,44 @@
     background-color: var(--primary-color);
 }
 
+/* Navbar Logo */
+.navbar-logo {
+    height: 50px; /* Significantly increased size */
+    width: auto;
+    max-width: 200px; /* Prevents logo from becoming too wide */
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.05);
+}
+
+/* Adjust logo size on smaller screens */
+@media (max-width: 991.98px) {
+    .navbar-logo {
+        height: 45px;
+    }
+}
+
+/* Ensure navbar has enough height for the logo */
+.navbar {
+    min-height: 80px; /* Increase navbar height */
+}
+
+.navbar-brand {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust navbar toggler position */
+.navbar-toggler {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 [data-theme="dark"] .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.5);
 }
