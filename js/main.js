@@ -38,6 +38,20 @@ function initNavigation() {
 
     // Initialize navbar active state
     document.querySelector('.nav-link[href="#home"]')?.classList.add('active');
+
+    // Close navbar on outside click (mobile only)
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    if (navbarCollapse && navbarToggler) {
+        document.addEventListener('click', function(event) {
+            const isNavbarOpen = navbarCollapse.classList.contains('show');
+            const isClickInsideNavbar = navbarCollapse.contains(event.target);
+            const isClickOnToggler = navbarToggler.contains(event.target);
+            if (isNavbarOpen && !isClickInsideNavbar && !isClickOnToggler) {
+                bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
+            }
+        });
+    }
 }
 
 // Contact Form Handling
