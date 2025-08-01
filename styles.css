@@ -43,6 +43,37 @@
     color: var(--secondary-color) !important;
 }
 
+/* Active navigation link styles */
+.navbar .nav-link.active,
+.navbar .nav-item.active .nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar .nav-link.active::after,
+.navbar .nav-item.active .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .navbar .nav-link.active,
+[data-theme="dark"] .navbar .nav-item.active .nav-link {
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .navbar .nav-link.active::after,
+[data-theme="dark"] .navbar .nav-item.active .nav-link::after {
+    background-color: var(--primary-color);
+}
+
 [data-theme="dark"] .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.5);
 }

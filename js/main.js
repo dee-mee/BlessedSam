@@ -189,8 +189,25 @@ function initThemeSwitcher() {
 }
 
 
+// Highlight active navigation link based on current page
+function highlightActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link').forEach(link => {
+        const linkPage = link.getAttribute('href').split('/').pop();
+        if (currentPage === linkPage || (currentPage === '' && linkPage === 'index.html')) {
+            link.classList.add('active');
+            // Also highlight parent list item for better styling
+            link.closest('.nav-item')?.classList.add('active');
+        } else {
+            link.classList.remove('active');
+            link.closest('.nav-item')?.classList.remove('active');
+        }
+    });
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    highlightActiveNavLink();
     initNavigation();
     initContactForm();
     initBackToTop();
