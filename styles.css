@@ -231,8 +231,8 @@ body {
     background: #fff;
     border-radius: 1rem;
     box-shadow: 0 2px 8px rgba(44,90,160,0.08);
-    padding: 2rem 1.5rem;
-    margin-bottom: 2rem;
+    padding: 1rem 0.75rem;
+    margin-bottom: 1.2rem;
     transition: box-shadow 0.3s, transform 0.3s;
     position: relative;
     z-index: 1;
@@ -348,7 +348,7 @@ body {
 
 /* Custom utility classes */
 .icon-large {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .icon-extra-large {
@@ -402,12 +402,12 @@ body {
 }
 
 .card-icon-container {
-    height: 200px;
+    height: 90px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .map-container {
