@@ -350,62 +350,6 @@
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
   <script src="js/main.min.js" defer></script>
-  <script>
-    // Theme Switching Functionality
-    const themeToggle = document.getElementById('themeToggle');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
-
-    // Apply the saved theme, or the preferred color scheme
-    if (currentTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-        document.documentElement.removeAttribute('data-theme');
-    }
-
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', function() {
-        let theme = 'light';
-        if (!document.documentElement.hasAttribute('data-theme')) {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            theme = 'dark';
-        } else {
-            document.documentElement.removeAttribute('data-theme');
-            theme = 'light';
-        }
-        localStorage.setItem('theme', theme);
-        updateThemeIcon();
-    });
-
-    // Update button icon based on current theme
-    function updateThemeIcon() {
-        const sunIcon = themeToggle.querySelector('.fa-sun');
-        const moonIcon = themeToggle.querySelector('.fa-moon');
-        
-        if (document.documentElement.hasAttribute('data-theme')) {
-            sunIcon.classList.remove('d-none');
-            moonIcon.classList.add('d-none');
-        } else {
-            sunIcon.classList.add('d-none');
-            moonIcon.classList.remove('d-none');
-        }
-    }
-
-    // Initial icon update
-    updateThemeIcon();
-
-    // Watch for system theme changes
-    prefersDarkScheme.addListener((e) => {
-        if (!localStorage.getItem('theme')) {
-            if (e.matches) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            } else {
-                document.documentElement.removeAttribute('data-theme');
-            }
-            updateThemeIcon();
-        }
-    });
-
     // Add loading animation to service cards
     document.addEventListener('DOMContentLoaded', function() {
         const observerOptions = {
