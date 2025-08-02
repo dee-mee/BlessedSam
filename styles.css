@@ -524,6 +524,18 @@ body {
 }
 
 /* Responsive adjustments */
+@media (max-width: 575.98px) {
+  .action-btn-responsive {
+    display: block;
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 12px;
+  }
+  .action-btn-responsive:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 991.98px) {
     .navb[data-theme="dark"] {
             --bs-body-bg: #1a1a2e;
